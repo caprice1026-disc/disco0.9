@@ -3,8 +3,8 @@ from discord.ext import commands
 from os import getenv
 
 
-os.getenv('KEY')
-TOKEN = "KEY"
+
+TOKEN = getenv('KEY')
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
