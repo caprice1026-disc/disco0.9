@@ -1,9 +1,6 @@
 import discord
-from discord import(
-    app_commands,
-)
+import app_commands
 import discord.ext.commands
-
 import os
 
 os.getenv('KEY')
