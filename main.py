@@ -1,6 +1,7 @@
 import discord
-import app_commands
-import os
+from discord.ext import commands
+from os import getenv
+
 
 os.getenv('KEY')
 TOKEN = "KEY"
