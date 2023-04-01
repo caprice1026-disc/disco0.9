@@ -1,9 +1,9 @@
 import discord
-import discord.ext.commands
 from discord import(
     app_commands,
-    )
-from discord.app_commands import CommandTree
+)
+import discord.ext.commands
+
 import os
 
 os.getenv('KEY')
