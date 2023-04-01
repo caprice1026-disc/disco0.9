@@ -4,7 +4,10 @@ from discord import(
     app_commands,
     )
 from discord.app_commands import CommandTree
-TOKEN = ""
+import os from get
+
+os.getenv('KEY')
+TOKEN = "KEY"
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
