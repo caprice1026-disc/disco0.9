@@ -1,3 +1,2 @@
 discord.py 
-discord.ext.commands
-
+discord-py-interactions
