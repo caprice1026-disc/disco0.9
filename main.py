@@ -8,7 +8,7 @@ TOKEN = getenv('KEY')
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
-tree = CommandTree(client)
+tree = app_commands.CommandTree(client)
 prefix = "/"
 #鯖設定するなら　guild = discord.guild(id=)
 class confomationview(discord.ui.View):
