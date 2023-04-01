@@ -4,7 +4,7 @@ from discord import(
     app_commands,
     )
 from discord.app_commands import CommandTree
-import os from get
+import os
 
 os.getenv('KEY')
 TOKEN = "KEY"
