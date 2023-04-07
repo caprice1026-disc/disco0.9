@@ -4,7 +4,7 @@ from os import getenv
 
 
 
-TOKEN = getenv('KEY')
+TOKEN = getenv('API_KEY')
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
