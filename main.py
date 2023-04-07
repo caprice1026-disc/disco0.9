@@ -1,8 +1,6 @@
 import discord
-from discord import(
-    app_commands,
-)
-from discord.ext import commands
+import discord.ext.commands
+import discord.app_commands
 from os import getenv
 
 
@@ -11,7 +9,7 @@ TOKEN = getenv('KEY')
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
-tree = app_commands.CommandTree(client)
+tree = discord.app_commands.CommandTree(client)
 prefix = "/"
 #鯖設定するなら　guild = discord.guild(id=)
 class confomationview(discord.ui.View):
@@ -40,8 +38,10 @@ class confomationview(discord.ui.View):
 async def on_ready():
     print("起動完了")
     await tree.sync()
+    
+    
 @tree.command(name="promotion",description="アクティブクリエイターが宣伝するためのコマンドです。")
-@app_commands.describe(role="誰に送るかを指定。",text="送りたい文章を書き込んでください。")
+@discord.app_commands.describe(role="誰に送るかを指定。",text="送りたい文章を書き込んでください。")
 async def promotion_command(interaction: discord.Interaction,role: discord.Role,text: str):
     #ここで一回確認を取りたい　フォローアップ関数だとエラーを吐く
     #rolenameの定義の仕方(問題なし)
