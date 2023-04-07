@@ -1,6 +1,5 @@
 import discord
 import discord.ext.commands
-import discord.app_commands
 from os import getenv
 
 
