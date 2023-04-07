@@ -1,4 +1,4 @@
 discord.py 
 discord-py-interactions
-discord=py-app_commands
+discord-py-app_commands
 os
