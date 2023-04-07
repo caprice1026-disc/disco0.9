@@ -1,2 +1,2 @@
-discord.py == 2.2.2 
-discord-py-interactions
+discord == 2.2.2 
+discord-interactions
