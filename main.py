@@ -23,7 +23,7 @@ class confomationview(discord.ui.View):
            icon_url=interaction.user.display_avatar.url,
         )
         #チャンネルID書き換えること
-        self.channel = client.get_channel()
+        self.channel = client.get_channel(1042657556386033676)
     @discord.ui.button(label="OK", style=discord.ButtonStyle.success)
     async def ok(self, button: discord.ui.Button, interaction: discord.Interaction):
         #Embedの中身を指定すること
