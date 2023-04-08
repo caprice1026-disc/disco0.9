@@ -46,7 +46,7 @@ async def promotion_command(interaction: discord.Interaction,role: discord.Role,
     #rolenameの定義の仕方(問題なし)
     rolename = role
     view = confomationview(interaction=interaction, text=text,)
-    Interaction.response.send_message()
+      #Interaction.response.send_message()
     await interaction.response.send_message(f"{rolename}へ{text}  と送信してよいですか？", ephemeral=True)
     await interaction.followup.send(view=view, ephemeral=True) 
 
