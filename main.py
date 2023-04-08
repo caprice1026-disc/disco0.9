@@ -35,7 +35,7 @@ class confomationview(discord.ui.View):
     
 @client.event
 async def on_ready():
-    print("起動完了")
+    print("b")
     await tree.sync()
     
     
