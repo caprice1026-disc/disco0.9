@@ -36,7 +36,7 @@ class confomationview(discord.ui.View):
 @client.event
 async def on_ready():
     print("起動完了")
-    await tree.sync()
+  await tree.sync()
 
 
 @tree.command(name="promotion",description="アクティブクリエイターが宣伝するためのコマンドです。")
