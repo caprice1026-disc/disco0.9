@@ -35,18 +35,18 @@ class confomationview(discord.ui.View):
     
 @client.event
 async def on_ready():
-    print("b")
+    print("起動完了")
     await tree.sync()
-    
-    
+
+
 @tree.command(name="promotion",description="アクティブクリエイターが宣伝するためのコマンドです。")
 @discord.app_commands.describe(role="誰に送るかを指定。",text="送りたい文章を書き込んでください。")
-async def promotion_command(interaction: discord.Interaction,role: discord.Role,text: str):
+async def promotion(interaction: discord.Interaction,role: discord.Role,text: str):
     #ここで一回確認を取りたい　フォローアップ関数だとエラーを吐く
     #rolenameの定義の仕方(問題なし)
     rolename = role
     view = confomationview(interaction=interaction, text=text,)
-      #Interaction.response.send_message()
+    Interaction.response.send_message()
     await interaction.response.send_message(f"{rolename}へ{text}  と送信してよいですか？", ephemeral=True)
     await interaction.followup.send(view=view, ephemeral=True) 
 
