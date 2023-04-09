@@ -1,2 +1,2 @@
 discord >= 2.0
-discord-interactions
+discord-interactions >= 4.0
